@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+<meta charset="utf-8">
+	<title></title>
+	<style >
+		h3{
+			background-color: #ccc;
+			height: 100px;
+			width: 960px;
+			margin: 0 auto;
+			margin-top: 30px;
+			text-align: center;
+			line-height: 100px;
+		}
+		#banner{
+			height: 390px;
+			background: url("img/01.jpg") no-repeat center;
+			width: 960px;
+			margin: 30px auto;
+			-webkit-background-size: cover;
+
+
+		}
+		#artical{
+			width: 960px;
+			height: 360px;
+			
+			margin:0 auto;
+
+		}
+		#left{
+			width: 570px;
+			height: 360px;
+			background-color: yellow;
+			float: left;
+			word-break: break-all;
+			display: table;
+
+		}
+		#right{
+			width: 360px;
+			height: 360px;
+			background-color: red;
+			float: right;
+			word-break: break-all;
+			display: table;
+		}
+		#left p,#right p{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		#footer{
+			
+			clear: both;
+		}
+		@media screen and (max-width: 960px){
+			h3{
+				width: 100%;
+			}
+			#artical{
+				width: 100%;
+			}
+			#left{
+				width: 67%;
+			}
+			#right{
+				width: 30%;
+			}
+			#banner{
+				width: 100%;
+				padding-top:40%;
+				max-width: 100%;
+				height:0;
+			}
+		}
+		@media screen and (max-width: 480px){
+			#left{
+				width: 100%;
+			}
+			#right{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+<header>
+	<h3>页眉</h3>
+</header>
+<nav>
+	<h3>导航</h3>
+</nav>
+<div id="banner" >
+	
+</div>
+<div id="artical">
+	<div id="left"><p>aaaaa aaaa aaa  aaaaa aaaa aaa a a a a aaaaaaaaaaaaaaaaaa aaaa aaa  aaaaa aaaa aaa a a a a aaaaaaaaaaaaaaaaaa aaaa aaa  aaaaa aaaa aaa a a a a aaaaaaaaaaaaa</p></div>
+	<div id="right">
+	<p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+	qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</p></div>
+</div>
+<footer id="footer">
+	<h3>页脚</h3>
+</footer>
+</body>
+</html>
